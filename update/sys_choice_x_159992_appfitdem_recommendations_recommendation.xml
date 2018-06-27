@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="recommendation" table="x_159992_appfitdem_recommendations" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>recommendation</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Do Nothing</label>
+            <language>en</language>
+            <name>x_159992_appfitdem_recommendations</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-20 18:56:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3f63ced10fb70300e936b36be1050e89</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-20 18:56:24</sys_updated_on>
+            <value>donothing</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>recommendation</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Retire Immediately</label>
+            <language>en</language>
+            <name>x_159992_appfitdem_recommendations</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-20 18:56:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4c83c2110fb70300e936b36be1050e85</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-20 18:56:44</sys_updated_on>
+            <value>retireimmediately</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>recommendation</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Project requested</label>
+            <language>en</language>
+            <name>x_159992_appfitdem_recommendations</name>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-20 18:56:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c993c2110fb70300e936b36be1050e9b</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-20 18:57:01</sys_updated_on>
+            <value>projectrequested</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>recommendation</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Right-size</label>
+            <language>en</language>
+            <name>x_159992_appfitdem_recommendations</name>
+            <sequence>4</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-20 18:57:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>25a3c2110fb70300e936b36be1050e9c</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-20 18:57:20</sys_updated_on>
+            <value>rightsize</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>recommendation</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Right-to-Use</label>
+            <language>en</language>
+            <name>x_159992_appfitdem_recommendations</name>
+            <sequence>5</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-24 01:20:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0af77a5a0ffb0300e936b36be1050ebe</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-24 01:20:25</sys_updated_on>
+            <value>righttouse</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>recommendation</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Re-negotiate</label>
+            <language>en</language>
+            <name>x_159992_appfitdem_recommendations</name>
+            <sequence>6</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-24 01:20:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4128bad60ffb0300e936b36be1050e1a</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-24 01:20:53</sys_updated_on>
+            <value>renegotiate</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>recommendation</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Already R2U'ed</label>
+            <language>en</language>
+            <name>x_159992_appfitdem_recommendations</name>
+            <sequence>7</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-24 01:21:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7738f2160f3f0300e936b36be1050e9b</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-24 01:21:19</sys_updated_on>
+            <value>alreadyr2ued</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>recommendation</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Follow-Up</label>
+            <language>en</language>
+            <name>x_159992_appfitdem_recommendations</name>
+            <sequence>8</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-24 01:21:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8b58bad60ffb0300e936b36be1050e1a</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-24 01:21:36</sys_updated_on>
+            <value>followup</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>recommendation</element>
+            <name>x_159992_appfitdem_recommendations</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-20 18:56:14</sys_created_on>
+            <sys_id>4883c29d0f770300e936b36be1050e42</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>recommendation</sys_name>
+            <sys_package display_value="AppFitDemo" source="x_159992_appfitdem">8bd594210f310300e936b36be1050e98</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="AppFitDemo">8bd594210f310300e936b36be1050e98</sys_scope>
+            <sys_update_name>sys_choice_x_159992_appfitdem_recommendations_recommendation</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-20 18:56:14</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

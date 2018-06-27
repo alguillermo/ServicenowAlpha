@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <client_script><![CDATA[function() {  /* widget controller */  var c = this;}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td{
+    border: 1px solid #dddddd;
+    text-align: right;
+    padding: 8 px;
+    //background-color: #dddddd;
+}
+
+tr:nth-child(even) {
+  	padding: 4px;
+    //background-color: #dddddd;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>capabilitydetail</id>
+        <internal>false</internal>
+        <link/>
+        <name>CapabilityDetail</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function()
+{	
+	data.caps=[];
+	data.apps=[];
+	
+		//currentCap = myCap.getValue('capabilityname')
+		var myApp = new GlideRecord('cmdb_ci_spkg');
+	//x_159992_appfitdem_capabilityname.capabilityname=Application Development
+		myApp.addQuery('x_159992_appfitdem_capabilityname.capabilityname','Application Development');
+		myApp.query();
+		while(myApp.next())
+		{
+			data.caps.push(
+			{
+				CapabilityName: myApp.getDisplayValue('x_159992_appfitdem_capabilityname')
+			}
+			);
+			data.apps.push(
+			{
+				CapabilityName: myApp.getDisplayValue('x_159992_appfitdem_capabilityname'),
+				Application: myApp.getDisplayValue('name'),
+				AppCost: myApp.getDisplayValue('cost'),
+				AppGroup: myApp.getDisplayValue('change_control'),
+				AppOwner: myApp.getDisplayValue('owned_by')
+			}
+			);
+		}
+	}
+)
+();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-27 22:32:41</sys_created_on>
+        <sys_id>8f287e630ffb0300e936b36be1050ef1</sys_id>
+        <sys_mod_count>57</sys_mod_count>
+        <sys_name>CapabilityDetail</sys_name>
+        <sys_package display_value="AppFitDemo" source="x_159992_appfitdem">8bd594210f310300e936b36be1050e98</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AppFitDemo">8bd594210f310300e936b36be1050e98</sys_scope>
+        <sys_update_name>sp_widget_8f287e630ffb0300e936b36be1050ef1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-29 05:57:07</sys_updated_on>
+        <template><![CDATA[<div class="thumbnail" ng-bind="cap in data.caps">
+  <p>{{cap.CapabilityName}}</p>
+  <p>Application Development</p>
+<div class="list-group" ng-repeat="app in data.apps" >
+  <table>
+  	<tr>
+  		<p>{{app.Application}}</p>
+  		<p>{{app.AppCost}}</p>
+  		<p>{{app.AppGroup}}</p>
+  		<p>{{app.AppOwner}}</p>
+    </tr>  
+  </table>
+  
+  ___________________________
+</div>
+</div>
+
+]]></template>
+    </sp_widget>
+</record_update>

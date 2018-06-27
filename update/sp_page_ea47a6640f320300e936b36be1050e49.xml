@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_page">
+    <sp_page action="INSERT_OR_UPDATE">
+        <css/>
+        <draft>false</draft>
+        <id>copy_of_test_list_1</id>
+        <internal>false</internal>
+        <public>false</public>
+        <roles/>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-11-29 20:34:23</sys_created_on>
+        <sys_id>ea47a6640f320300e936b36be1050e49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>copy_of_test_list_1</sys_name>
+        <sys_package display_value="AppFitDemo" source="x_159992_appfitdem">8bd594210f310300e936b36be1050e98</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AppFitDemo">8bd594210f310300e936b36be1050e98</sys_scope>
+        <sys_update_name>sp_page_ea47a6640f320300e936b36be1050e49</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-11-29 20:34:23</sys_updated_on>
+        <title>Copy of Test Simple List (1)</title>
+    </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=ea47a6640f320300e936b36be1050e49"/>
+</record_update>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="Business Capability" section_id="6cf013820f474300e936b36be1050e62" sys_domain="global" table="x_159992_appfitdem_business_capability" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>REL.x_159992_appfitdem_application.REL:4466b1230ff20300e936b36be1050ec2</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-17 01:49:46</sys_created_on>
+            <sys_id>a88253c20f474300e936b36be1050ee1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Business Capability" display_value="Business Capability" name="x_159992_appfitdem_business_capability" sys_domain="global" view="Default view">6cf013820f474300e936b36be1050e62</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-17 01:49:46</sys_updated_on>
+            <sys_user/>
+            <type>list</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-17 01:49:46</sys_created_on>
+            <sys_id>2c8253c20f474300e936b36be1050ee1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Business Capability" display_value="Business Capability" name="x_159992_appfitdem_business_capability" sys_domain="global" view="Default view">6cf013820f474300e936b36be1050e62</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-17 01:49:46</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Business Capability</caption>
+            <header>false</header>
+            <name>x_159992_appfitdem_business_capability</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-17 01:42:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6cf013820f474300e936b36be1050e62</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Business Capability</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="AppFitDemo" source="x_159992_appfitdem">8bd594210f310300e936b36be1050e98</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="AppFitDemo">8bd594210f310300e936b36be1050e98</sys_scope>
+            <sys_update_name>sys_ui_section_6cf013820f474300e936b36be1050e62</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-17 01:42:57</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="cmdb_ci_spkg.Name" max_length="40" name="x_159992_appfitdem_cmdb_ci_spkg_name" type="collection"/>
+</database>

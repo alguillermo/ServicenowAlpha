@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_form_sections form_id="5d887b850fc30300e936b36be1050e17" sys_domain="global" table="cmdb_ci_spkg" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-14 02:01:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>dd887b850fc30300e936b36be1050e19</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="cmdb_ci_spkg" name="cmdb_ci_spkg" sys_domain="global" view="d5887b850fc30300e936b36be1050e13">5d887b850fc30300e936b36be1050e17</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_spkg" sys_domain="global" view="d5887b850fc30300e936b36be1050e13">d9887b850fc30300e936b36be1050e16</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-14 02:01:56</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-14 02:06:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>639977c50fc30300e936b36be1050e8f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="cmdb_ci_spkg" name="cmdb_ci_spkg" sys_domain="global" view="d5887b850fc30300e936b36be1050e13">5d887b850fc30300e936b36be1050e17</sys_ui_form>
+            <sys_ui_section caption="New Section" display_value="New Section" name="cmdb_ci_spkg" sys_domain="global" view="d5887b850fc30300e936b36be1050e13">a79937c50fc30300e936b36be1050ec7</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-14 02:06:44</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>cmdb_ci_spkg</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-14 02:01:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5d887b850fc30300e936b36be1050e17</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>cmdb_ci_spkg</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="AppFitDemo" source="x_159992_appfitdem">8bd594210f310300e936b36be1050e98</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="AppFitDemo">8bd594210f310300e936b36be1050e98</sys_scope>
+            <sys_update_name>sys_ui_form_sections_5d887b850fc30300e936b36be1050e17</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-14 02:01:56</sys_updated_on>
+            <sys_user/>
+            <view display_value="BenivaAppFir" name="BenivaAppFir">d5887b850fc30300e936b36be1050e13</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

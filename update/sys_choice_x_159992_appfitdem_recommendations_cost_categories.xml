@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="cost_categories" table="x_159992_appfitdem_recommendations" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cost_categories</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>$0-25K</label>
+            <language>en</language>
+            <name>x_159992_appfitdem_recommendations</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-24 07:40:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>dc2f00ea0fbf0300e936b36be1050e52</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-24 07:41:07</sys_updated_on>
+            <value>costCategoryA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cost_categories</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>$25K-100K</label>
+            <language>en</language>
+            <name>x_159992_appfitdem_recommendations</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-24 07:41:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>463fccaa0fbf0300e936b36be1050e77</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-24 07:41:52</sys_updated_on>
+            <value>costCategoryB</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cost_categories</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>$100K-250K</label>
+            <language>en</language>
+            <name>x_159992_appfitdem_recommendations</name>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-24 07:42:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8f6fccaa0fbf0300e936b36be1050e77</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-24 07:43:42</sys_updated_on>
+            <value>costCategoryC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cost_categories</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>$250-500K</label>
+            <language>en</language>
+            <name>x_159992_appfitdem_recommendations</name>
+            <sequence>4</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-24 07:44:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e59fccaa0fbf0300e936b36be1050e78</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-24 07:44:15</sys_updated_on>
+            <value>costCategoryD</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cost_categories</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>$500K-1M</label>
+            <language>en</language>
+            <name>x_159992_appfitdem_recommendations</name>
+            <sequence>5</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-24 07:44:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4800dcea0fbf0300e936b36be1050e20</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-24 07:45:25</sys_updated_on>
+            <value>costCategoryE</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cost_categories</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>$1M +</label>
+            <language>en</language>
+            <name>x_159992_appfitdem_recommendations</name>
+            <sequence>6</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-24 07:45:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9b10142e0fbf0300e936b36be1050e4d</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-24 07:45:43</sys_updated_on>
+            <value>costCategoryF</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>cost_categories</element>
+            <name>x_159992_appfitdem_recommendations</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-24 07:40:36</sys_created_on>
+            <sys_id>b53fccaa0fbf0300e936b36be1050e52</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>cost_categories</sys_name>
+            <sys_package display_value="AppFitDemo" source="x_159992_appfitdem">8bd594210f310300e936b36be1050e98</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="AppFitDemo">8bd594210f310300e936b36be1050e98</sys_scope>
+            <sys_update_name>sys_choice_x_159992_appfitdem_recommendations_cost_categories</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-24 07:40:36</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

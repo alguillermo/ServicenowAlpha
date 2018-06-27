@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-20 23:22:27</sys_created_on>
+        <sys_id>b3604f9d0ff70300e936b36be1050eb4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_159992_appfitdem_recommenation.x_159992_appfitdem.recommenation_user</sys_name>
+        <sys_package display_value="AppFitDemo" source="x_159992_appfitdem">8bd594210f310300e936b36be1050e98</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AppFitDemo">8bd594210f310300e936b36be1050e98</sys_scope>
+        <sys_security_acl display_value="x_159992_appfitdem_recommenation">bb604f9d0ff70300e936b36be1050eb1</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_b3604f9d0ff70300e936b36be1050eb4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-20 23:22:27</sys_updated_on>
+        <sys_user_role display_value="x_159992_appfitdem.recommenation_user" name="x_159992_appfitdem.recommenation_user">ef60079d0ff70300e936b36be1050e4f</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

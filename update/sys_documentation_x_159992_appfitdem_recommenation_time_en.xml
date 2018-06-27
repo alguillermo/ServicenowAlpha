@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="time" label="TIME" language="en" table="x_159992_appfitdem_recommenation">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>time</element>
+            <help/>
+            <hint/>
+            <label>TIME</label>
+            <language>en</language>
+            <name>x_159992_appfitdem_recommenation</name>
+            <plural>TIMEs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-20 23:22:28</sys_created_on>
+            <sys_id>bb604f9d0ff70300e936b36be1050ecb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>TIME</sys_name>
+            <sys_package display_value="AppFitDemo" source="x_159992_appfitdem">8bd594210f310300e936b36be1050e98</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="AppFitDemo">8bd594210f310300e936b36be1050e98</sys_scope>
+            <sys_update_name>sys_documentation_x_159992_appfitdem_recommenation_time_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-20 23:22:28</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

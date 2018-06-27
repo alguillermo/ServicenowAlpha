@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="time" table="x_159992_appfitdem_recommendations" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>time</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Tolerate</label>
+            <language>en</language>
+            <name>x_159992_appfitdem_recommendations</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-20 18:54:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5403069d0f770300e936b36be1050e86</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-20 18:54:20</sys_updated_on>
+            <value>tolerate</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>time</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Investe</label>
+            <language>en</language>
+            <name>x_159992_appfitdem_recommendations</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-20 18:54:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1a03c2110fb70300e936b36be1050e7c</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-20 18:54:36</sys_updated_on>
+            <value>invest</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>time</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Migrate</label>
+            <language>en</language>
+            <name>x_159992_appfitdem_recommendations</name>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-20 18:54:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c2130ed10fb70300e936b36be1050e46</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-20 18:54:52</sys_updated_on>
+            <value>migrate</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>time</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Eliminate</label>
+            <language>en</language>
+            <name>x_159992_appfitdem_recommendations</name>
+            <sequence>4</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-20 18:55:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2523ce5d0f770300e936b36be1050e83</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-20 18:55:20</sys_updated_on>
+            <value>eliminate</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>time</element>
+            <name>x_159992_appfitdem_recommendations</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-20 18:54:12</sys_created_on>
+            <sys_id>56030ed10fb70300e936b36be1050e3f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>time</sys_name>
+            <sys_package display_value="AppFitDemo" source="x_159992_appfitdem">8bd594210f310300e936b36be1050e98</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="AppFitDemo">8bd594210f310300e936b36be1050e98</sys_scope>
+            <sys_update_name>sys_choice_x_159992_appfitdem_recommendations_time</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-20 18:54:12</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

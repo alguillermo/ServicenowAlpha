@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="x_159992_appfitdem_application" label="Business Capability" max_length="40" name="x_159992_appfitdem_business_capability" type="collection">
+        <element label="Capability Name" max_length="40" name="capability_name" type="string"/>
+        <element choice="1" label="PrimaryCategory" max_length="40" name="primarycategory" type="choice">
+            <choice/>
+        </element>
+        <element choice="1" label="SecondaryCategory" max_length="40" name="secondarycategory" type="choice">
+            <choice/>
+        </element>
+    </element>
+</database>

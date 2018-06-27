@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Capability" max_length="40" name="x_159992_appfitdem_capability" type="collection">
+        <element display="true" label="CapabilityName" max_length="40" name="capabilityname" type="string"/>
+        <element choice="1" label="Primary Category" max_length="40" name="primarycategory" type="choice">
+            <choice>
+                <element label="Core Business" value="coreBusiness"/>
+                <element label="Enterprise" value="enterprise"/>
+                <element label="Operations &amp; Corp Services" value="opsandcorp"/>
+            </choice>
+        </element>
+        <element choice="1" label="Secondary Category" max_length="40" name="secondarycategory" type="choice">
+            <choice>
+                <element dependent_value="Core Business" label="Business Development" value="businessdevelopment"/>
+                <element dependent_value="Core Business" label="Exploration and Appraisal" value="explorationandappraisal"/>
+                <element dependent_value="Core Business" label="Facility Delivery" value="facilitydelivery"/>
+                <element dependent_value="Operations &amp; Corp Services" label="Financial Management" value="financialmanagement"/>
+                <element label="Governance and Compliance" value="governanceandcomplaince"/>
+                <element label="HSE and SR Management" value="hseandsrmanagement"/>
+                <element label="Human Resource" value="humanresource"/>
+                <element label="Information Management" value="informationmanagement"/>
+                <element label="Logistics" value="logistics"/>
+                <element label="Marketing" value="marketing"/>
+                <element label="Operations" value="opeartions"/>
+                <element label="Resource Charactization" value="resourcecharactization"/>
+                <element label="Retail" value="retail"/>
+                <element label="Social Responsibility" value="socialresponsibility"/>
+                <element label="Strategic Management" value="strategicmanagement"/>
+                <element label="Supply Management" value="supplymanagment"/>
+            </choice>
+        </element>
+    </element>
+</database>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="cmdb_ci_spkg" version="2" view="asset">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>name</element>
+            <list_id display_value="cmdb_ci_spkg" element="NULL" name="cmdb_ci_spkg" parent="NULL" relationship="NULL" sys_domain="global" view="796460d90a0a0b8c00028dd3fef21891">9e353c8a0f730300e936b36be1050e1b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-22 21:09:41</sys_created_on>
+            <sys_id>16353c8a0f730300e936b36be1050e1c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-22 21:09:41</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>version</element>
+            <list_id display_value="cmdb_ci_spkg" element="NULL" name="cmdb_ci_spkg" parent="NULL" relationship="NULL" sys_domain="global" view="796460d90a0a0b8c00028dd3fef21891">9e353c8a0f730300e936b36be1050e1b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-22 21:09:41</sys_created_on>
+            <sys_id>96353c8a0f730300e936b36be1050e1c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-22 21:09:41</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>manufacturer</element>
+            <list_id display_value="cmdb_ci_spkg" element="NULL" name="cmdb_ci_spkg" parent="NULL" relationship="NULL" sys_domain="global" view="796460d90a0a0b8c00028dd3fef21891">9e353c8a0f730300e936b36be1050e1b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-22 21:09:41</sys_created_on>
+            <sys_id>1a353c8a0f730300e936b36be1050e1c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-22 21:09:41</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>x_159992_appfitdem_capabilityname.capabilityname</element>
+            <list_id display_value="cmdb_ci_spkg" element="NULL" name="cmdb_ci_spkg" parent="NULL" relationship="NULL" sys_domain="global" view="796460d90a0a0b8c00028dd3fef21891">9e353c8a0f730300e936b36be1050e1b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-22 21:09:41</sys_created_on>
+            <sys_id>9a353c8a0f730300e936b36be1050e1c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-22 21:09:41</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>x_159992_appfitdem_capabilityname.primarycategory</element>
+            <list_id display_value="cmdb_ci_spkg" element="NULL" name="cmdb_ci_spkg" parent="NULL" relationship="NULL" sys_domain="global" view="796460d90a0a0b8c00028dd3fef21891">9e353c8a0f730300e936b36be1050e1b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-22 21:09:41</sys_created_on>
+            <sys_id>1e353c8a0f730300e936b36be1050e1c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-22 21:09:41</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>x_159992_appfitdem_capabilityname.secondarycategory</element>
+            <list_id display_value="cmdb_ci_spkg" element="NULL" name="cmdb_ci_spkg" parent="NULL" relationship="NULL" sys_domain="global" view="796460d90a0a0b8c00028dd3fef21891">9e353c8a0f730300e936b36be1050e1b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-22 21:09:41</sys_created_on>
+            <sys_id>9e353c8a0f730300e936b36be1050e1c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-22 21:09:41</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>cost</element>
+            <list_id display_value="cmdb_ci_spkg" element="NULL" name="cmdb_ci_spkg" parent="NULL" relationship="NULL" sys_domain="global" view="796460d90a0a0b8c00028dd3fef21891">9e353c8a0f730300e936b36be1050e1b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-22 21:09:41</sys_created_on>
+            <sys_id>12353c8a0f730300e936b36be1050e1d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-22 21:09:41</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>change_control.roles</element>
+            <list_id display_value="cmdb_ci_spkg" element="NULL" name="cmdb_ci_spkg" parent="NULL" relationship="NULL" sys_domain="global" view="796460d90a0a0b8c00028dd3fef21891">9e353c8a0f730300e936b36be1050e1b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-22 21:09:41</sys_created_on>
+            <sys_id>92353c8a0f730300e936b36be1050e1d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-22 21:09:41</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>owned_by.first_name</element>
+            <list_id display_value="cmdb_ci_spkg" element="NULL" name="cmdb_ci_spkg" parent="NULL" relationship="NULL" sys_domain="global" view="796460d90a0a0b8c00028dd3fef21891">9e353c8a0f730300e936b36be1050e1b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-22 21:09:41</sys_created_on>
+            <sys_id>16353c8a0f730300e936b36be1050e1d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-22 21:09:41</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>owned_by.last_name</element>
+            <list_id display_value="cmdb_ci_spkg" element="NULL" name="cmdb_ci_spkg" parent="NULL" relationship="NULL" sys_domain="global" view="796460d90a0a0b8c00028dd3fef21891">9e353c8a0f730300e936b36be1050e1b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-22 21:09:41</sys_created_on>
+            <sys_id>96353c8a0f730300e936b36be1050e1d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-22 21:09:41</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>x_159992_appfitdem_time.time</element>
+            <list_id display_value="cmdb_ci_spkg" element="NULL" name="cmdb_ci_spkg" parent="NULL" relationship="NULL" sys_domain="global" view="796460d90a0a0b8c00028dd3fef21891">9e353c8a0f730300e936b36be1050e1b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>10</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-22 21:09:41</sys_created_on>
+            <sys_id>1a353c8a0f730300e936b36be1050e1d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-22 21:09:41</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>x_159992_appfitdem_time.number</element>
+            <list_id display_value="cmdb_ci_spkg" element="NULL" name="cmdb_ci_spkg" parent="NULL" relationship="NULL" sys_domain="global" view="796460d90a0a0b8c00028dd3fef21891">9e353c8a0f730300e936b36be1050e1b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>11</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-22 21:09:41</sys_created_on>
+            <sys_id>9a353c8a0f730300e936b36be1050e1d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-22 21:09:41</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>x_159992_appfitdem_time.recommendation</element>
+            <list_id display_value="cmdb_ci_spkg" element="NULL" name="cmdb_ci_spkg" parent="NULL" relationship="NULL" sys_domain="global" view="796460d90a0a0b8c00028dd3fef21891">9e353c8a0f730300e936b36be1050e1b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>12</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-22 21:09:41</sys_created_on>
+            <sys_id>1e353c8a0f730300e936b36be1050e1d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-22 21:09:41</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>cmdb_ci_spkg</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-22 21:08:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>75f43cc60f730300e936b36be1050e5a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name/>
+            <sys_package/>
+            <sys_policy/>
+            <sys_scope display_value="AppFitDemo">8bd594210f310300e936b36be1050e98</sys_scope>
+            <sys_update_name/>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-22 21:08:34</sys_updated_on>
+            <sys_user display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</sys_user>
+            <view display_value="Asset" name="asset">796460d90a0a0b8c00028dd3fef21891</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

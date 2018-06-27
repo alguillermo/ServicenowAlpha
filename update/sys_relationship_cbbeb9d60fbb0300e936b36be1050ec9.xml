@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_relationship">
+    <sys_relationship action="INSERT_OR_UPDATE">
+        <advanced>false</advanced>
+        <apply_to/>
+        <basic_apply_to>cmdb_ci_spkg</basic_apply_to>
+        <basic_query_from>x_159992_appfitdem_recommendations</basic_query_from>
+        <insert_callback/>
+        <name>CMDB  to recommendation</name>
+        <query_from/>
+        <query_with><![CDATA[(function refineQuery(current, parent) {
+
+	// Add your code here, such as current.addQuery(field, value);
+	current.addQuery('source_application', parent.name); 
+
+})(current, parent);]]></query_with>
+        <reference_field>current_cost</reference_field>
+        <related_list/>
+        <simple_reference>false</simple_reference>
+        <sys_class_name>sys_relationship</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-23 21:53:48</sys_created_on>
+        <sys_id>cbbeb9d60fbb0300e936b36be1050ec9</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>CMDB  to recommendation</sys_name>
+        <sys_package display_value="AppFitDemo" source="x_159992_appfitdem">8bd594210f310300e936b36be1050e98</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AppFitDemo">8bd594210f310300e936b36be1050e98</sys_scope>
+        <sys_update_name>sys_relationship_cbbeb9d60fbb0300e936b36be1050ec9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-23 22:05:06</sys_updated_on>
+    </sys_relationship>
+    <sys_translated_text action="delete_multiple" query="documentkey=cbbeb9d60fbb0300e936b36be1050ec9"/>
+</record_update>

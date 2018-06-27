@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="cmdb_ci" label="Software" max_length="40" name="cmdb_ci_spkg" sizeclass="1792" type="collection">
+        <element label="Capability Name" max_length="32" name="x_159992_appfitdem_capabilityname" reference="x_159992_appfitdem_capability" type="reference"/>
+        <element choice="1" label="TIME" max_length="32" name="x_159992_appfitdem_time" reference="x_159992_appfitdem_recommendations" type="reference">
+            <choice/>
+        </element>
+    </element>
+</database>

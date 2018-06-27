@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_instance_vlist">
+    <sp_instance_vlist action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>danger</color>
+        <css/>
+        <display_field>name</display_field>
+        <field_list/>
+        <filter/>
+        <glyph>male</glyph>
+        <id/>
+        <maximum_entries>10</maximum_entries>
+        <order>1</order>
+        <order_by>name</order_by>
+        <order_direction>asc</order_direction>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="4">3647a6640f320300e936b36be1050e5a</sp_column>
+        <sp_page display_value="form">ed5f8ec347730200ba13a5554ee49046</sp_page>
+        <sp_widget display_value="Simple List">5b255672cb03020000f8d856634c9c28</sp_widget>
+        <sys_class_name>sp_instance_vlist</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-11-29 20:34:23</sys_created_on>
+        <sys_id>fa47a6640f320300e936b36be1050e5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Live Profiles</sys_name>
+        <sys_package display_value="AppFitDemo" source="x_159992_appfitdem">8bd594210f310300e936b36be1050e98</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AppFitDemo">8bd594210f310300e936b36be1050e98</sys_scope>
+        <sys_update_name>sp_instance_vlist_fa47a6640f320300e936b36be1050e5b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-11-29 20:34:23</sys_updated_on>
+        <table>live_profile</table>
+        <title>Live Profiles</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"always_show": {
+		"displayValue": false,
+		"value": false
+	},
+	"image_field": {
+		"value": "photo",
+		"displayValue": "photo"
+	},
+	"secondary_fields": {
+		"value": "sys_updated_on,type",
+		"displayValue": "sys_updated_on,type"
+	},
+	"panel_body_height": {
+		"value": "120em",
+		"displayValue": "120em"
+	},
+	"rounded_images": {
+		"displayValue": true,
+		"value": true
+	}
+}]]></widget_parameters>
+    </sp_instance_vlist>
+    <sys_translated_text action="delete_multiple" query="documentkey=fa47a6640f320300e936b36be1050e5b"/>
+</record_update>

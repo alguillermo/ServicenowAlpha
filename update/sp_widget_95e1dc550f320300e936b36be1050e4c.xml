@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <client_script><![CDATA[function ($scope, $location, $rootScope, spUtil, $interpolate) {
+	var c = this;
+
+	this.data.filterText = "";
+	this.showFilter = false;
+
+	this.onClick = function($event, item, url, action) {
+		$event.stopPropagation();
+		$event.preventDefault();
+		if (typeof url == "string") {
+			var urlExp = $interpolate(url);
+			url = urlExp(item);
+			$location.url(url);
+		} else if (url && typeof url == "object")
+			$location.search(url);
+		else {
+			var evt = {};
+			evt.url = url;
+			evt.table = item.className;
+			evt.sys_id = item.sys_id;
+			evt.record = item;
+			evt.rectangle_id = c.options.sys_id;
+			evt.action = action;
+			// put out the selection with simple list "sl_" prefix
+			$location.search('sl_sys_id', evt.sys_id);
+			$location.search('sl_table', evt.table);
+			$location.search('spa', 1); // spa means "I've got this"
+			$rootScope.$broadcast('$sp.list.click', evt);
+		}
+	};
+
+	if (c.options.table)
+		spUtil.recordWatch($scope, c.options.table, c.options.filter);
+
+	this.getMaxShownLabel = function(maxEntries, totalCount) {
+		if (totalCount == c.data.maxCount)
+			return "${First [0] of more than [1]}".replace('[0]', maxEntries).replace('[1]', totalCount);
+
+		return "${First [0] of [1]}".replace('[0]', maxEntries).replace('[1]', totalCount);
+	};
+
+	this.seeAllPage = c.options.list_page_dv || 'list';
+	this.targetPageID = (c.options.sp_page) ? "&target_page_id=" + c.options.sp_page : "";
+
+	c.getActionColor = function(action) {
+		return "text-" + action.color;
+	};
+
+	c.update = function update() {
+			c.server.update();
+	}
+
+	c.toggleFilter = function() {
+		c.showFilter = !c.showFilter;
+	}
+
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.panel {
+position: relative;
+}
+
+.panel-heading i {
+  cursor: pointer;
+  position: absolute;
+  padding: 10px;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+}
+
+.disabled-filter {
+	color: #A0A0A0;
+}
+
+.list-group-item.ng-enter {
+  transition: all 1s;
+  -webkit-transition: all 1s;
+
+  background-color: #c0dcfa;
+}
+
+.list-group-item.ng-enter-active {
+  background-color: #fff;
+}
+
+.hide-x-overflow {
+  overflow-x: hidden;
+}
+
+.translated-html &gt; p {
+  margin: 0px;
+  padding: 0px;
+}
+
+IMG {
+  max-width: 320px;
+  max-height: 240px;
+}
+
+IMG.img-sm {
+  max-height: 40px;
+  max-width: 40px;
+}
+
+.filter-box {
+  margin-top: 10px;
+}
+
+.panel-footer {
+  .number-shown-label {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    display: inline-block;
+  }
+
+  a {
+    color: inherit;
+  }
+}</css>
+        <data_table>sp_instance_vlist</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list>table,display_field,glyph,filter,sp_page,color,size,maximum_entries</field_list>
+        <has_preview>true</has_preview>
+        <id>benivacaplist</id>
+        <internal>false</internal>
+        <link/>
+        <name>BenivaCapList</name>
+        <option_schema>[{"name":"always_show","label":"Show even when empty","type":"boolean"},{"name":"panel_body_height","label":"List body height","type":"string"},{"name":"image_field","label":"Image field","type":"field_name"},{"name":"secondary_fields","label":"Secondary fields","type":"field_list"},{"name":"rounded_images","label":"Rounded images","type":"boolean"},{"displayValue":"Page","name":"list_page","label":"List page","type":"reference","value":"sp_page","ed":{"reference":"sp_page"}},{"name":"hide_footer","label":"Hide Footer","type":"boolean"},{"displayValue":"UI View","hint":"View to use when target page is a form","name":"view","label":"View","type":"reference","value":"sys_ui_view","ed":{"reference":"sys_ui_view"}}]</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function () {
+	
+//********* INIT ***************
+data.pri=[];
+data.sec=[];
+data.cap=[];
+	
+var myCap = new GlideRecord('x_159992_appfitdem_capability');	
+var currentCap;
+var capList=[];
+var primaryCategory=[];
+var secondaryCategory=[];	
+var currentPrime;
+var secondary;
+var key;
+var current;
+var x;
+
+//********* Primary Category and Secondary Category arrays init***************	
+myCap.query();
+while(myCap.next())
+{
+	key = myCap.getValue('secondarycategory')
+	secondaryCategory.push(key.toString())
+}
+	
+var i;
+
+var s = [];
+for ( i = 0; i < secondaryCategory.length; i++ ) 
+{
+	current = secondaryCategory[i];
+	if (s.indexOf(current) < 0) s.push(current);
+}
+	
+//********* Main Function - BUILD CAP HTML OUTPUT ***************
+	
+	for( x = 0; x < s.length; x++ )
+	{
+
+		data.sec.push(
+		{
+			SecondaryName: s[x]	
+		})
+			
+		}
+	}
+
+)(
+)
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-12-01 17:37:06</sys_created_on>
+        <sys_id>95e1dc550f320300e936b36be1050e4c</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>BenivaCapList</sys_name>
+        <sys_package display_value="AppFitDemo" source="x_159992_appfitdem">8bd594210f310300e936b36be1050e98</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AppFitDemo">8bd594210f310300e936b36be1050e98</sys_scope>
+        <sys_update_name>sp_widget_95e1dc550f320300e936b36be1050e4c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-12 02:14:56</sys_updated_on>
+        <template><![CDATA[
+  <div class="thumbnail" style="background-color:#c0dff9" ng-repeat="cap in data.sec" >
+  {{cap.SecondaryName}}
+  </div>]]></template>
+    </sp_widget>
+</record_update>

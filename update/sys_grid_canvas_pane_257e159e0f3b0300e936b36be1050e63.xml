@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_grid_canvas_pane">
+    <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+        <grid_canvas display_value="PA New Tab">5fff172e0fe70300e936b36be1050eb8</grid_canvas>
+        <height>10</height>
+        <portal_widget display_value="Created 2018-01-23 10:48:21">697e159e0f3b0300e936b36be1050e60</portal_widget>
+        <posx>0</posx>
+        <posy>24</posy>
+        <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-23 18:48:21</sys_created_on>
+        <sys_id>257e159e0f3b0300e936b36be1050e63</sys_id>
+        <sys_mod_count>57</sys_mod_count>
+        <sys_name>5fff172e0fe70300e936b36be1050eb8</sys_name>
+        <sys_package display_value="AppFitDemo" source="x_159992_appfitdem">8bd594210f310300e936b36be1050e98</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AppFitDemo">8bd594210f310300e936b36be1050e98</sys_scope>
+        <sys_update_name>sys_grid_canvas_pane_257e159e0f3b0300e936b36be1050e63</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-26 22:58:16</sys_updated_on>
+        <width>4</width>
+    </sys_grid_canvas_pane>
+</record_update>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_page">
+    <sp_page action="INSERT_OR_UPDATE">
+        <css/>
+        <draft>false</draft>
+        <id>capabilitydetail</id>
+        <internal>false</internal>
+        <public>false</public>
+        <roles/>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-27 22:32:41</sys_created_on>
+        <sys_id>0f287e630ffb0300e936b36be1050ef3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>capabilitydetail</sys_name>
+        <sys_package display_value="AppFitDemo" source="x_159992_appfitdem">8bd594210f310300e936b36be1050e98</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AppFitDemo">8bd594210f310300e936b36be1050e98</sys_scope>
+        <sys_update_name>sp_page_0f287e630ffb0300e936b36be1050ef3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-27 22:32:41</sys_updated_on>
+        <title>CapabilityDetail - Test Page</title>
+    </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=0f287e630ffb0300e936b36be1050ef3"/>
+</record_update>

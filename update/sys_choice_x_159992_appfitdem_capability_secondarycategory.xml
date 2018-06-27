@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="secondarycategory" table="x_159992_appfitdem_capability" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>Core Business</dependent_value>
+            <element>secondarycategory</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Business Development</label>
+            <language>en</language>
+            <name>x_159992_appfitdem_capability</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-14 04:50:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>eede58d50f070300e936b36be1050ea1</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-14 20:05:35</sys_updated_on>
+            <value>businessdevelopment</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>Core Business</dependent_value>
+            <element>secondarycategory</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Exploration and Appraisal</label>
+            <language>en</language>
+            <name>x_159992_appfitdem_capability</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-14 04:51:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>741f18d50f070300e936b36be1050e8e</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-14 20:06:16</sys_updated_on>
+            <value>explorationandappraisal</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>Core Business</dependent_value>
+            <element>secondarycategory</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Facility Delivery</label>
+            <language>en</language>
+            <name>x_159992_appfitdem_capability</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-14 04:52:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>db6f5cd50f070300e936b36be1050e17</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-14 20:06:26</sys_updated_on>
+            <value>facilitydelivery</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>Operations &amp; Corp Services</dependent_value>
+            <element>secondarycategory</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Financial Management</label>
+            <language>en</language>
+            <name>x_159992_appfitdem_capability</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-14 04:40:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c7ac90590fc30300e936b36be1050ed4</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-14 20:07:42</sys_updated_on>
+            <value>financialmanagement</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>secondarycategory</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Governance and Compliance</label>
+            <language>en</language>
+            <name>x_159992_appfitdem_capability</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-14 04:38:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c62c1c5d0fc30300e936b36be1050e0c</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-14 04:38:58</sys_updated_on>
+            <value>governanceandcomplaince</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>secondarycategory</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>HSE and SR Management</label>
+            <language>en</language>
+            <name>x_159992_appfitdem_capability</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-14 04:37:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>001c90590fc30300e936b36be1050ed3</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-14 04:37:50</sys_updated_on>
+            <value>hseandsrmanagement</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>secondarycategory</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Human Resource</label>
+            <language>en</language>
+            <name>x_159992_appfitdem_capability</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-14 04:39:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b78c5c550f070300e936b36be1050ec3</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-08 20:20:22</sys_updated_on>
+            <value>humanresource</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>secondarycategory</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Information Management</label>
+            <language>en</language>
+            <name>x_159992_appfitdem_capability</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-14 04:57:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6a9064190f070300e936b36be1050e9d</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-14 04:57:41</sys_updated_on>
+            <value>informationmanagement</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>secondarycategory</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Logistics</label>
+            <language>en</language>
+            <name>x_159992_appfitdem_capability</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-26 22:45:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>18713d9b0fb30300e936b36be1050e6f</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-26 22:45:43</sys_updated_on>
+            <value>logistics</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>secondarycategory</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Marketing</label>
+            <language>en</language>
+            <name>x_159992_appfitdem_capability</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-14 04:53:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>579fd8d50f070300e936b36be1050ed2</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-14 04:53:21</sys_updated_on>
+            <value>marketing</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>secondarycategory</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Operations</label>
+            <language>en</language>
+            <name>x_159992_appfitdem_capability</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-26 22:45:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5941719b0fb30300e936b36be1050e05</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-26 22:45:18</sys_updated_on>
+            <value>opeartions</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>secondarycategory</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Resource Charactization</label>
+            <language>en</language>
+            <name>x_159992_appfitdem_capability</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-14 04:51:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>333fd8d50f070300e936b36be1050ed1</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-14 04:52:13</sys_updated_on>
+            <value>resourcecharactization</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>secondarycategory</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Retail</label>
+            <language>en</language>
+            <name>x_159992_appfitdem_capability</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-14 04:53:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>babf18d50f070300e936b36be1050e8f</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-14 04:53:35</sys_updated_on>
+            <value>retail</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>secondarycategory</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Social Responsibility</label>
+            <language>en</language>
+            <name>x_159992_appfitdem_capability</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-19 06:57:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>21fba6b60f470300e936b36be1050e2d</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-19 06:57:48</sys_updated_on>
+            <value>socialresponsibility</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>secondarycategory</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Strategic Management</label>
+            <language>en</language>
+            <name>x_159992_appfitdem_capability</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-14 04:30:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2f6ad4550f070300e936b36be1050e0a</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-14 04:35:25</sys_updated_on>
+            <value>strategicmanagement</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>secondarycategory</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Supply Management</label>
+            <language>en</language>
+            <name>x_159992_appfitdem_capability</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-14 04:39:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>576c9c550f070300e936b36be1050e5e</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-14 04:39:40</sys_updated_on>
+            <value>supplymanagment</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>secondarycategory</element>
+            <name>x_159992_appfitdem_capability</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-14 04:30:06</sys_created_on>
+            <sys_id>ab6ad4550f070300e936b36be1050e0b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>secondarycategory</sys_name>
+            <sys_package display_value="AppFitDemo" source="x_159992_appfitdem">8bd594210f310300e936b36be1050e98</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="AppFitDemo">8bd594210f310300e936b36be1050e98</sys_scope>
+            <sys_update_name>sys_choice_x_159992_appfitdem_capability_secondarycategory</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-14 04:30:06</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

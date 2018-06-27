@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <client_script><![CDATA[function() {
+  /* widget controller */
+  var c = this;
+	
+}
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>
+&lt;style&gt;
+
+#divstyle1 {
+    background-color: yellow;
+    box-shadow: 10px 10px;
+}
+#divsytle2{
+		font-family: Arial;
+		font-size:      40px;
+    font-weight:    bold;
+}
+
+.right {
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+	.button6 
+		{
+    background-color: white; /* Green */
+    border: none;
+    color: black;
+    text-align: center;
+    font-size: 9px;
+    }
+
+	.button1 
+		{
+    //background-color: #f4bc42;
+    background-color: #a8c6f4;  
+		padding: 6px;
+		border-radius: 2px;
+		box-shadow: 5px 5px #888888;
+    font-size: 9px;
+    color: black;
+  	}
+	.button2 {border-radius: 4px;}
+	.button3 {border-radius: 8px;}
+	.button4 {border-radius: 12px;}
+	.button5 {border-radius: 50%;}
+
+	p.dashed {border-style: dashed;}
+	p.solid {border-style: solid;}
+
+&lt;/style&gt;</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>capability</id>
+        <internal>false</internal>
+        <link/>
+        <name>Capability</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function()
+{	
+	data.pri=[];
+	data.sec=[];	
+	data.caps=[];
+
+	var myCap = new GlideRecord('x_159992_appfitdem_capability');	
+	var currentCap;
+	var capList=[];
+	var primaryCategory=[];
+	var secondaryCategory=[];	
+	var currentPrime;
+	var secondary;
+	var key;
+	var i;
+	var current;
+// /*
+	
+	//__________________________Version Alpha_________________________
+		
+				//var myCap = new GlideRecord('x_159992_appfitdem_capability');
+				myCap.query();
+				while(myCap.next())
+				{
+					currentCap = myCap.getValue('capabilityname')
+					var myApp = new GlideRecord('cmdb_ci_spkg');
+					myApp.addQuery('x_159992_appfitdem_capabilityname.capabilityname',currentCap);
+					myApp.query();
+					var runningTotal=0;
+					var currentCost=0;
+					while(myApp.next())
+					{
+						var currentApp;
+						currentApp=myApp.getValue('name');
+						currentCost = myApp.getValue('cost');
+						if(myApp.getValue('cost')===null)
+						{
+							currentCost=parseFloat(0+currentCost);
+						}
+						runningTotal=parseFloat(runningTotal)+parseFloat(currentCost);
+												
+					}
+					if(runningTotal>999)
+						{
+							runningTotal= Math.round(runningTotal/1000);
+							runningTotal=runningTotal+'K'
+						}
+					if(myApp.getDisplayValue('x_159992_appfitdem_capabilityname')!="")
+					{
+						data.caps.push(
+						{	
+							CapName: myApp.getDisplayValue('x_159992_appfitdem_capabilityname'),	
+							CapCount: myApp.getRowCount(),
+							Cost: runningTotal
+						}
+										);
+					}
+					runningTotal = 0;
+				}
+// */
+/*	
+	//__________________________Version Beta_________________________
+
+	
+	//setup array for primary category and remove duplicates
+	myCap.orderBy('primarycategory');	 
+	myCap.query();
+	while(myCap.next())
+	{
+		//primaryCategory.push(myCap.getValue('primarycategory'));
+		key = myCap.getValue('primarycategory')
+		primaryCategory.push(key.toString())
+	}
+	var a = [];
+	for ( i = 0; i < primaryCategory.length; i++ ) 
+	{
+		current = primaryCategory[i];
+		if (a.indexOf(current) < 0) a.push(current);
+	}
+
+	//setup array for secondary category and remove duplicates	
+	myCap.query();
+	while(myCap.next())
+	{
+		//secondaryCategory.push(myCap.getValue('secondarycategory'));
+		key = myCap.getValue('secondarycategory')
+		secondaryCategory.push(key.toString())
+	}
+	var  s = [];
+	for ( i = 0; i < secondaryCategory.length; i++ ) 
+	{
+		current = secondaryCategory[i];
+		if (s.indexOf(current) < 0) s.push(current);
+	}	
+
+	//begin the data push to HTML	
+	
+	for (i=0; i < a.length; i++)
+	{
+		
+		myCap.addQuery('primarycategory',a[i])
+		myCap.query()
+		while(myCap.next())
+		{
+			
+			data.pri.push(
+			{
+				PrimaryName: a[i]
+				//PrimaryName: myCap.getDisplayValue('primarycategory')
+			});
+			
+		}
+		
+		
+		currentPrime = a[i]
+		currentPrime = currentPrime.toString();
+
+		var x;
+		for (x=0; x < s.length; x++)
+		{
+			secondary = s[x];
+			var temp = secondary.toString();
+			var arraytemp;
+		
+			myCap = new GlideAggregate('x_159992_appfitdem_capability');
+			myCap.addQuery('primarycategory',currentPrime);
+			myCap.groupBy('secondaycategory');
+			myCap.query();
+			while(myCap.next())
+			{
+			if (temp===(myCap.getValue('secondarycategory')))
+			{
+				if(arraytemp!=(myCap.getValue('secondarycategory')))
+				{
+					
+					data.sec.push(
+					{
+						SecondaryName: myCap.getValue('secondarycategory')
+					});
+					
+					temp = secondary.toString();
+					arraytemp=myCap.getValue('secondarycategory');
+				}
+				myCap = new GlideRecord('x_159992_appfitdem_capability');
+				myCap.addQuery('secondarycategory',temp);
+				myCap.query();
+				while(myCap.next())
+				{
+					currentCap = myCap.getValue('capabilityname')
+					var myApp = new GlideRecord('cmdb_ci_spkg');
+					myApp.addQuery('x_159992_appfitdem_capabilityname.capabilityname',currentCap);
+					myApp.query();
+					var runningTotal=0;
+					var currentCost=0;
+					while(myApp.next())
+					{
+						var currentApp;
+						currentApp=myApp.getValue('name');
+						currentCost = myApp.getValue('cost');
+						if(myApp.getValue('cost')===null)
+						{
+							currentCost=parseFloat(0+currentCost);
+						}
+						runningTotal=parseFloat(runningTotal)+parseFloat(currentCost);
+					}
+					if(myApp.getDisplayValue('x_159992_appfitdem_capabilityname')!="")
+					{
+						data.caps.push(
+						{
+							//SecondaryName: myCap.getDisplayValue('secondarycategory'),	
+							CapName: myApp.getDisplayValue('x_159992_appfitdem_capabilityname'),	
+							CapCount: myApp.getRowCount(),
+							Cost: runningTotal
+						}
+										);
+						//gs.print('The total number of applications is: '+myApp.getRowCount());
+						//gs.print('The total cost is: $'+runningTotal);
+					}
+					runningTotal = 0;
+				}
+				break;
+		}
+//gs.print('compare validate is false');
+}
+//gs.print('********************end of while loop');
+}
+//gs.print('--------------------------------------------------end of secondary for loop');
+}
+ */	
+}
+)
+();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-10-23 21:02:48</sys_created_on>
+        <sys_id>dafa40780f420300e936b36be1050eb7</sys_id>
+        <sys_mod_count>505</sys_mod_count>
+        <sys_name>Capability</sys_name>
+        <sys_package display_value="AppFitDemo" source="x_159992_appfitdem">8bd594210f310300e936b36be1050e98</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AppFitDemo">8bd594210f310300e936b36be1050e98</sys_scope>
+        <sys_update_name>sp_widget_dafa40780f420300e936b36be1050eb7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-06 16:12:21</sys_updated_on>
+        <template><![CDATA[<p>
+<div ng-controller="repeatController">
+<!--<input type="search" ng-model="e" placeholder="filter primary..." aria-label="filter pri" />
+<input type="search" ng-model="q" placeholder="filter secondary..." aria-label="filter sec" />-->
+<input type="search" ng-model="w" placeholder="filter caps..." aria-label="filter caps" /> 
+<p>  
+
+<!--<div id="divstyle2" class="thumbnail" style="background-color: #white" ng-repeat="cap in data.pri | filter:e as results" >
+  {{cap.PrimaryName}}
+<div class="thumbnail" style="background-color:#c0dff9" ng-repeat="cap in data.sec | filter:q as results" > 
+  {{cap.SecondaryName}}-->
+		<div class="row capabilities">
+  		<div id="divstyle1" class="col-sm-3 col-md-2" style="border:thin" ng-repeat="cap in data.caps | filter:w as results" >
+    		<div class="thumbnail">
+        		<p align="right">
+		    			<a href="#" class="button1" role="button">{{cap.CapCount}}</a>      
+          </p>
+        		<p align="center">  
+        			<button ng-click="c.onBrowseCap('cap')" class="button6" type="button"style="color:black">{{cap.CapName}}</button>              
+              <a class="settings" href="javascript:void(0)" ng-click="c.onBrowse">
+  						<!--<i class ="fa fa-cog"></i>-->
+  						</a>
+        		</p>
+        		<p>
+          		<a href="#" class="button1" role="button">${{cap.Cost}} (CAD)</a> 
+        		</p>
+    		</div>
+  		</div>	
+		</div>
+<!--</div>
+</div>
+  <ul class="nav nav-pills">
+  <li role="presentation" class="active"><a href="https://dev37800.service-now.com/x_159992_appfitdem_application_list.do?sysparm_userpref_module=e46b975b0f710300e936b36be1050e36&sysparm_clear_stack=true">Applications</a></li>
+  <li role="presentation"><a href="https://dev37800.service-now.com/x_159992_appfitdem_capability_list.do?sysparm_userpref_module=35863b450fc30300e936b36be1050ec1&sysparm_clear_stack=true">Capabilities</a></li>
+  <li role="presentation"><a href="#">Reports</a></li>
+</ul> --> 
+
+
+]]></template>
+    </sp_widget>
+</record_update>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Application" max_length="40" name="x_159992_appfitdem_application" type="collection">
+        <element label="AlsoKnownAs" max_length="40" name="alsoknownas" type="string"/>
+        <element label="AppFitRecommendationID" max_length="40" name="appfitrecommendationid" type="string"/>
+        <element label="ApplicationName" max_length="80" name="applicationname" type="string"/>
+        <element label="ApplicationOwner" max_length="40" name="applicationowner" type="string"/>
+        <element choice="1" label="ApplicationType" max_length="40" name="applicationtype" type="choice">
+            <choice/>
+        </element>
+        <element choice="1" label="AssetType" max_length="40" name="assettype" type="choice">
+            <choice/>
+        </element>
+        <element label="BenivaIPID" max_length="40" name="benivaipid" type="string"/>
+        <element label="BusinessPaid" max_length="40" name="businesspaid" type="string"/>
+        <element attributes="ref_auto_completer=AJAXReferenceChoice" choice="1" display="true" label="CapabilityName" max_length="32" name="capabilityname" reference="x_159992_appfitdem_capability" reference_qual="capabilityname=^EQ" reference_qual_condition="capabilityname=^EQ" type="reference">
+            <choice>
+                <element dependent_value="-- Edit this --" label="-- New choice --" value="-- New choice --"/>
+            </choice>
+        </element>
+        <element label="cost" max_length="20" name="cost" type="currency"/>
+        <element label="Description" max_length="120" name="description" type="string"/>
+        <element label="DRPlan" max_length="40" name="drplan" type="string"/>
+        <element choice="1" label="LicenseType" max_length="40" name="licensetype" type="choice">
+            <choice/>
+        </element>
+        <element choice="1" label="Media" max_length="40" name="media" type="choice">
+            <choice/>
+        </element>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="VendorID" max_length="40" name="number" type="string"/>
+        <element label="NumberOfUsers" max_length="40" name="numberofusers" type="string"/>
+        <element label="OSEnvironment" max_length="40" name="osenvironment" type="string"/>
+        <element label="PlanToRetire" max_length="40" name="plantoretire" type="string"/>
+        <element label="Platform" max_length="40" name="platform" type="string"/>
+        <element choice="1" label="primaryCapCategory" max_length="32" name="primarycapcategory" reference="x_159992_appfitdem_capability" reference_qual="primarycategory=^EQ" reference_qual_condition="primarycategory=^EQ" type="reference">
+            <choice/>
+        </element>
+        <element label="ProjectPlan" max_length="40" name="projectplan" type="string"/>
+        <element label="RetirementDate" max_length="40" name="retirementdate" type="due_date"/>
+        <element choice="1" label="SLACategory" max_length="40" name="slacategory" type="choice">
+            <choice/>
+        </element>
+        <element label="SuiteName" max_length="40" name="suitename" type="string"/>
+        <element label="SupportGroup" max_length="40" name="supportgroup" type="string"/>
+        <element label="UserGroups" max_length="40" name="usergroups" type="string"/>
+        <element label="VendorName" max_length="40" name="vendorname" type="string"/>
+        <element label="Version" max_length="40" name="version" type="string"/>
+        <index name="index">
+            <element name="capabilityname"/>
+        </index>
+        <index name="index2">
+            <element name="primarycapcategory"/>
+        </index>
+    </element>
+</database>

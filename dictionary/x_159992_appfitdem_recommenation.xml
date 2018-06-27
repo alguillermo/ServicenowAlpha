@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Recommenation" max_length="40" name="x_159992_appfitdem_recommenation" type="collection">
+        <element choice="1" label="Recommendation" max_length="40" name="recommendation" type="choice">
+            <choice>
+                <element label="Do Nothing" sequence="1" value="donothing"/>
+                <element label="Retire Immediately" sequence="2" value="retireimmediately"/>
+            </choice>
+        </element>
+        <element label="Source Application" max_length="32" name="source_application" reference="cmdb_ci_spkg" type="reference"/>
+        <element choice="1" label="TIME" max_length="40" name="time" type="choice">
+            <choice>
+                <element label="Tolerate" sequence="1" value="tolerate"/>
+                <element label="Invest" sequence="2" value="invest"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="source_application"/>
+        </index>
+    </element>
+</database>

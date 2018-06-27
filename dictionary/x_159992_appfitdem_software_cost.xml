@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Software.cost" max_length="40" name="x_159992_appfitdem_software_cost" type="collection"/>
+</database>

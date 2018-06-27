@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="x_159992_appfitdem_application" label="Assessment" max_length="40" name="x_159992_appfitdem_assessment" type="collection">
+        <element label="AssessedApplication" max_length="40" name="assessedapplication" type="string"/>
+        <element label="AssessmentDecision" max_length="40" name="assessmentdecision" type="longint"/>
+        <element label="Requirement1" max_length="40" name="requirement1" type="longint"/>
+        <element label="Requirement2" max_length="40" name="requirement2" type="longint"/>
+    </element>
+</database>

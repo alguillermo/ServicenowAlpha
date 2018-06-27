@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Recommendations" max_length="40" name="x_159992_appfitdem_recommendations" type="collection">
+        <element label="Current Cost" max_length="32" name="current_cost" reference="x_159992_appfitdem_software_cost" type="reference"/>
+        <element choice="1" label="Difficulty Rating" max_length="40" name="difficulty_rating" type="choice">
+            <choice>
+                <element label="1" sequence="1" value="difficulty1"/>
+                <element label="2" sequence="2" value="difficulty2"/>
+                <element label="3" sequence="3" value="difficulty3"/>
+                <element label="4" sequence="4" value="difficulty4"/>
+                <element label="5" sequence="5" value="difficulty5"/>
+                <element label="N/A" sequence="6" value="difficultyNA"/>
+            </choice>
+        </element>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
+        <element choice="1" label="Recommendation" max_length="40" name="recommendation" type="choice">
+            <choice>
+                <element label="Do Nothing" sequence="1" value="donothing"/>
+                <element label="Retire Immediately" sequence="2" value="retireimmediately"/>
+                <element label="Project requested" sequence="3" value="projectrequested"/>
+                <element label="Right-size" sequence="4" value="rightsize"/>
+                <element label="Right-to-Use" sequence="5" value="righttouse"/>
+                <element label="Re-negotiate" sequence="6" value="renegotiate"/>
+                <element label="Already R2U'ed" sequence="7" value="alreadyr2ued"/>
+                <element label="Follow-Up" sequence="8" value="followup"/>
+            </choice>
+        </element>
+        <element label="Source Application" max_length="32" name="source_application" reference="cmdb_ci_spkg" type="reference"/>
+        <element label="Target" max_length="40" name="target" type="string"/>
+        <element choice="1" label="TIME" max_length="40" name="time" type="choice">
+            <choice>
+                <element label="Tolerate" sequence="1" value="tolerate"/>
+                <element label="Investe" sequence="2" value="invest"/>
+                <element label="Migrate" sequence="3" value="migrate"/>
+                <element label="Eliminate" sequence="4" value="eliminate"/>
+            </choice>
+        </element>
+        <element label="Tolerate Perecentage" max_length="40" name="tolerate_perecentage" type="percent_complete"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" dependent="source_application.owned_by.name" dependent_on_field="source_application.owned_by.name" label="Business VP" max_length="40" name="u_choice_1" type="string" use_dependent_field="true">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" dependent="source_application.change_control.name" dependent_on_field="source_application.change_control.name" label="Business Group" max_length="40" name="u_choice_2" type="string" use_dependent_field="true">
+            <choice/>
+        </element>
+        <index name="index">
+            <element name="current_cost"/>
+        </index>
+        <index name="index2">
+            <element name="source_application"/>
+        </index>
+    </element>
+</database>

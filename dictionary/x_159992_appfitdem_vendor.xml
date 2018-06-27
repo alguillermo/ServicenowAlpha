@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="x_159992_appfitdem_application" label="Vendor" max_length="40" name="x_159992_appfitdem_vendor" type="collection">
+        <element label="ContractPaymentDate" max_length="40" name="contractpaymentdate" type="due_date"/>
+        <element default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
+        <element label="VendorContractNotificationDate" max_length="40" name="vendorcontractnotificationdate" type="due_date"/>
+        <element label="VendorContractRenewalEndDate" max_length="40" name="vendorcontractrenewalenddate" type="due_date"/>
+    </element>
+</database>

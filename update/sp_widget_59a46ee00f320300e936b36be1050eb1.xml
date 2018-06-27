@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <client_script/>
+        <controller_as>c</controller_as>
+        <css>.panel {
+position: relative;
+}
+
+.panel-heading i {
+  cursor: pointer;
+  position: absolute;
+  padding: 10px;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+}
+
+.disabled-filter {
+	color: #A0A0A0;
+}
+
+.list-group-item.ng-enter {
+  transition: all 1s;
+  -webkit-transition: all 1s;
+
+  background-color: #c0dcfa;
+}
+
+.list-group-item.ng-enter-active {
+  background-color: #fff;
+}
+
+.hide-x-overflow {
+  overflow-x: hidden;
+}
+
+.translated-html &gt; p {
+  margin: 0px;
+  padding: 0px;
+}
+
+IMG {
+  max-width: 320px;
+  max-height: 240px;
+}
+
+IMG.img-sm {
+  max-height: 40px;
+  max-width: 40px;
+}
+
+.filter-box {
+  margin-top: 10px;
+}
+
+.panel-footer {
+  .number-shown-label {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    display: inline-block;
+  }
+
+  a {
+    color: inherit;
+  }
+}</css>
+        <data_table>sp_instance_vlist</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list>table,display_field,glyph,filter,sp_page,color,size,maximum_entries</field_list>
+        <has_preview>true</has_preview>
+        <id>allansimpletest</id>
+        <internal>false</internal>
+        <link/>
+        <name>allansimpletest</name>
+        <option_schema>[{"name":"always_show","label":"Show even when empty","type":"boolean"},{"name":"panel_body_height","label":"List body height","type":"string"},{"name":"image_field","label":"Image field","type":"field_name"},{"name":"secondary_fields","label":"Secondary fields","type":"field_list"},{"name":"rounded_images","label":"Rounded images","type":"boolean"},{"displayValue":"Page","name":"list_page","label":"List page","type":"reference","value":"sp_page","ed":{"reference":"sp_page"}},{"name":"hide_footer","label":"Hide Footer","type":"boolean"},{"displayValue":"UI View","hint":"View to use when target page is a form","name":"view","label":"View","type":"reference","value":"sys_ui_view","ed":{"reference":"sys_ui_view"}}]</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function () {
+                        
+//********* INIT ***************
+data.pri=[];
+data.sec=[];
+data.cap=[];
+                        
+var myCap = new GlideRecord('x_159992_appfitdem_capability');                     
+var currentCap;
+var capList=[];
+var primaryCategory=[];
+var secondaryCategory=[];                      
+var currentPrime={};
+var secondary;
+var key;
+var current;
+var x;
+ 
+//********* Primary Category and Secondary Category arrays init***************       
+myCap.query();
+while(myCap.next())
+{
+                        key = myCap.getValue('primarycategory')
+                        primaryCategory.push(key.toString())
+}                       
+myCap.query();
+while(myCap.next())
+{
+                        key = myCap.getValue('secondarycategory')
+                        secondaryCategory.push(key.toString())
+}
+                        
+var i;
+var a = [];
+for ( i = 0; i < primaryCategory.length; i++ ) 
+{
+                        current = primaryCategory[i];
+                        if (a.indexOf(current) < 0) a.push(current);
+}
+ 
+var s = [];
+for ( i = 0; i < secondaryCategory.length; i++ ) 
+{
+                        current = secondaryCategory[i];
+                        if (s.indexOf(current) < 0) s.push(current);
+}
+                        
+//********* Main Function - BUILD CAP HTML OUTPUT ***************
+                        
+for ( i = 0; i < a.length; i++ ) 
+{
+                        currentPrime = a[i];
+                        //currentPrime= currentPrime.toString();
+                        
+                        data.pri.push(
+                        {
+                                                PrimaryName: a[i]
+                        });
+                        for( x = 0; x < s.length; x++ )
+                        {
+                                                
+                                                secondary = s[x];
+                                                var temp = secondary.toString();
+                                                var arraytemp;
+                                                var tempquery = 'primarycategoryLIKE'+currentPrime;
+                                                var mySec = new GlideAggregate('x_159992_appfitdem_capability');
+                                                mySec.addQuery('primarycategory',currentPrime);
+                                                mySec.query();
+                                                while(mySec.next())
+                                                {
+                                                                        if (temp===(mySec.getValue('secondarycategory')))
+                                                                        {
+                                                                                                if(arraytemp!=(mySec.getValue('secondarycategory')))
+                                                                                                {
+                                                                                                                                                data.sec.push(
+                                                                                                                                                {
+                                                                                                                                                                        SecondaryName: s[x]
+                                                                                                                                                })
+                                                                                                                                                
+                                                                                                                                                temp = secondary.toString();
+                                                                                                                                                arraytemp=mySec.getValue('secondarycategory');
+                                                                                                                                                //break;
+                                                                                                }
+                                                                        }
+                                                                        
+                                                }
+                        }
+}
+}
+)(
+)
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-11-29 20:22:49</sys_created_on>
+        <sys_id>59a46ee00f320300e936b36be1050eb1</sys_id>
+        <sys_mod_count>396</sys_mod_count>
+        <sys_name>allansimpletest</sys_name>
+        <sys_package display_value="AppFitDemo" source="x_159992_appfitdem">8bd594210f310300e936b36be1050e98</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AppFitDemo">8bd594210f310300e936b36be1050e98</sys_scope>
+        <sys_update_name>sp_widget_59a46ee00f320300e936b36be1050eb1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-19 19:11:02</sys_updated_on>
+        <template><![CDATA[<div ng-controller="repeatController">
+<input type="search" ng-model="q" placeholder="filter caps..." aria-label="filter caps" />  
+<div id="divstyle2" class="thumbnail" style="background-color: #white" ng-repeat="cap in data.pri | filter:q as results" >  
+  {{cap.PrimaryName}}
+  <div style="background-color:#c0dff9" class="animate-repeat" ng-repeat="cap in data.sec"> 
+    {{cap.SecondaryName}}
+  </div>
+</div>
+</div>
+]]></template>
+    </sp_widget>
+</record_update>

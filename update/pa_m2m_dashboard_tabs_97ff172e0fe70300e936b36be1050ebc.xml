@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="pa_m2m_dashboard_tabs">
+    <pa_m2m_dashboard_tabs action="INSERT_OR_UPDATE">
+        <dashboard display_value="Enterprise Application Portfolio">97ff172e0fe70300e936b36be1050eb7</dashboard>
+        <home>false</home>
+        <homepage display_value="Enterprise Application Portfolio">e71496e30f930300e936b36be1050ee4</homepage>
+        <order>1</order>
+        <sys_class_name>pa_m2m_dashboard_tabs</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-12 12:37:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>97ff172e0fe70300e936b36be1050ebc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>97ff172e0fe70300e936b36be1050eb7</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AppFitDemo" source="x_159992_appfitdem">8bd594210f310300e936b36be1050e98</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AppFitDemo">8bd594210f310300e936b36be1050e98</sys_scope>
+        <sys_update_name>pa_m2m_dashboard_tabs_97ff172e0fe70300e936b36be1050ebc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-12 12:37:03</sys_updated_on>
+        <tab display_value="New Tab">5bff172e0fe70300e936b36be1050eba</tab>
+    </pa_m2m_dashboard_tabs>
+</record_update>

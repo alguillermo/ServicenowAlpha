@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <client_script/>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>allansstock</id>
+        <internal>false</internal>
+        <link/>
+        <name>allansStock</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function () {
+                        
+//********* INIT ***************
+data.pri=[];
+                        
+var myCap = new GlideRecord('x_159992_appfitdem_capability');                     
+var currentCap;
+var primaryCategory=[];    
+var secondaryCategory=[];
+var currentPrime={};
+var key;
+var current;
+var x;
+ 
+//********* Primary Category and Secondary Category arrays init***************       
+myCap.query();
+while(myCap.next())
+{
+	key = myCap.getValue('primarycategory')
+	primaryCategory.push(key.toString())
+	currentCap = key;
+}                       
+                        
+var i; 
+var primaryArray = [];
+for ( i = 0; i < primaryCategory.length; i++ ) 
+{
+  current = primaryCategory[i];
+  if (primaryArray.indexOf(current) < 0) primaryArray.push(current);
+}
+	
+//****** loop through primary array, at each nest another array for secondary*****	
+for (i = 0; i < primaryArray.length; i++ )
+{
+x=primaryArray[i];
+//primarycategory=enterprise
+myCap.addQuery('primarycategory','enterprise')
+myCap.query();
+	while(myCap.next())
+		{
+			key=myCap.getValue('secondarycategory')
+			secondaryCategory.push((key.toString()))
+			currentCap = key;
+		}
+	var a;
+	var secondaryArray = [];
+	for( a=0; a < secondaryCategory.length; a++)
+		{
+			current = secondaryCategory[x];
+			if(secondaryArray.indexOf(current) < 0) secondaryArray.push(current);
+		}
+}
+                        
+//********* Main Function - BUILD CAP HTML OUTPUT ***************
+                        
+for ( i = 0; i < primaryArray.length; i++ ) 
+{
+  //currentPrime = a[i];
+  data.pri.push(
+  {
+		PrimaryName: primaryArray[i]
+	});
+
+}
+}
+)(
+)]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-11-28 18:12:55</sys_created_on>
+        <sys_id>b85df4500f320300e936b36be1050e35</sys_id>
+        <sys_mod_count>102</sys_mod_count>
+        <sys_name>allansStock</sys_name>
+        <sys_package display_value="AppFitDemo" source="x_159992_appfitdem">8bd594210f310300e936b36be1050e98</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AppFitDemo">8bd594210f310300e936b36be1050e98</sys_scope>
+        <sys_update_name>sp_widget_b85df4500f320300e936b36be1050e35</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-02-20 20:45:56</sys_updated_on>
+        <template><![CDATA[<div ng-controller="repeatController">
+<input type="search" ng-model="q" placeholder="filter caps..." aria-label="filter caps" />  
+<div id="divstyle2" class="thumbnail" style="background-color: #white" ng-repeat="cap in data.pri | filter:q as results" >  
+  {{cap.PrimaryName}}
+  <div style="background-color:#c0dff9" class="animate-repeat" ng-repeat="cap in data.sec"> 
+    {{cap.SecondaryName}}
+  </div>
+</div>
+</div>
+]]></template>
+    </sp_widget>
+</record_update>
